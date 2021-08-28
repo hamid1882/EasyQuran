@@ -1,0 +1,1 @@
+Here's my Deploy : https://hamid-hussain.github.io/EasyQuran/
