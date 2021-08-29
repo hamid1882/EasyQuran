@@ -84,13 +84,13 @@
 	<div class="container max-w-full bg-yellow-500">
 		<div class="container mx-auto p-2">
 			<div class="flex text-white gap-8 justify-center items-center text-sm">
-				<div class=" hover:bg-yellow-400 rounded-md p-1">Home</div>
-				<div class="hidden lg:flex hover:bg-yellow-400 rounded-md p-1">About Us</div>
-				<div class="hidden lg:flex hover:bg-yellow-400 rounded-md p-1">Sermons</div>
-				<div class="hidden md:flex hover:bg-yellow-400 rounded-md p-1">Pages</div>
-				<div class="hidden lg:flex hover:bg-yellow-400 rounded-md p-1">Events</div>
-				<div class="hidden lg:flex hover:bg-yellow-400 rounded-md p-1">Causes</div>
-				<div class="hidden sm:flex hover:bg-yellow-400 rounded-md p-1">Contact Us</div>
+				<div class=" hover:bg-yellow-400 rounded-md p-1 uppercase">Home</div>
+				<div class="hidden lg:flex hover:bg-yellow-400 rounded-md p-1 uppercase">About Us</div>
+				<div class="hidden lg:flex hover:bg-yellow-400 rounded-md p-1 uppercase">Sermons</div>
+				<div class="hidden md:flex hover:bg-yellow-400 rounded-md p-1 uppercase">Pages</div>
+				<div class="hidden lg:flex hover:bg-yellow-400 rounded-md p-1 uppercase">Events</div>
+				<div class="hidden lg:flex hover:bg-yellow-400 rounded-md p-1 uppercase">Causes</div>
+				<div class="hidden sm:flex hover:bg-yellow-400 rounded-md p-1 uppercase">Contact Us</div>
 				<div class="flex p-1">
 					<div class="border items-center p-1 sm:p-2 rounded bg-yellow-400">
 						<input type="text" placeholder="Enter Keyword" class="bg-transparent placeholder-white outline-none">
@@ -118,35 +118,37 @@
 	<!--Hero section-->
 
 	<div class="container mx-auto">
-		<div class="flex p-10 shadow-2xl gap-10">
-			<div class="flex gap-2 items-center ">
-				<i class="bi bi-skip-start-fill bg-gray-200 text-2xl text-gray-500 rounded-full p-1 px-2 hover:text-white hover:bg-yellow-400 pb-2 px-1"></i>
-				<i class="bi bi-play-fill bg-gray-200 text-2xl text-gray-500 rounded-full p-1 px-2 hover:text-white hover:bg-yellow-400 pb-2 px-1"></i>
-				<i class="bi bi-stop-fill bg-gray-200 text-2xl text-gray-500 rounded-full p-1 px-2 hover:text-white hover:bg-yellow-400 pb-2 px-1"></i>
-				<i class="bi bi-skip-end-fill bg-gray-200 text-2xl text-gray-500 rounded-full p-1 px-2 hover:text-white hover:bg-yellow-400 pb-2 px-1"></i>
+		<div class="flex-row sm:flex p-10 shadow-2xl gap-10">
+			<div class="flex gap-2 items-center justify-center sm:justify-start mb-4 sm:mb-0 mt-10 sm:mt-0">
+				<i class="bi bi-skip-start-fill bg-gray-200 text-1xl text-gray-500 rounded-full p-1 px-2 hover:text-white hover:bg-yellow-400 pb-2 px-1"></i>
+				<i class="bi bi-play-fill bg-gray-200 text-1xl text-gray-500 rounded-full p-1 px-2 hover:text-white hover:bg-yellow-400 pb-2 px-1"></i>
+				<i class="bi bi-stop-fill bg-gray-200 text-1xl text-gray-500 rounded-full p-1 px-2 hover:text-white hover:bg-yellow-400 pb-2 px-1"></i>
+				<i class="bi bi-skip-end-fill bg-gray-200 text-1xl text-gray-500 rounded-full p-1 px-2 hover:text-white hover:bg-yellow-400 pb-2 px-1"></i>
 			</div> <!--pause, resume, next, previous icons-->
 
 			<div class="flex w-full items-center">
 				<div class="flex-row justify-start items-center rounded w-full h-4 bg-gray-200">
-					<div class="w-2/3 bg-yellow-400 rounded-lg"></div>
-					<p class="flex-start justify-start">15:25</p>
-					<p class="flex justify-end">20:40</p>
+					<div class="w-2/3 bg-yellow-400 rounded-lg h-4 text-center">-</div>
+					<div class="flex gap-2 justify-between">
+						<p class="">15:25</p>
+						<p class="">20:40</p>
+					</div>
 			  </div> 
 			</div><!--duration and numbers-->
 
-			<div flex>
-				<div class="flex-row justify-center items-center text-gray-500">
+			<div flex class="justify-center mt-10 items-center sm:mt-0">
+				<div class="flex-row justify-center items-center text-gray-500 hover:text-yellow-400">
 					<i class="bi bi-volume-off-fill text-2xl p-2"></i>
 					<p>Mute</p>
 				</div>
 			</div><!--mute icon-->
 
 			<div class="flex">
-				<div class="flex gap-3 justify-center items-center">
-					<div><i class="bi bi-arrow-repeat bg-gray-200 text-2xl text-gray-500 rounded-full p-1 px-2 hover:text-white hover:bg-yellow-400 pb-2 px-1"></i></div>
-					<div><i class="bi bi-shuffle bg-gray-200 text-2xl text-gray-500 rounded-full p-1 px-2 hover:text-white hover:bg-yellow-400 pb-2 px-1"></i></div>
-					<div><i class="bi bi-arrows-fullscreen bg-gray-200 text-2xl text-gray-500 rounded-full p-1 px-2 hover:text-white hover:bg-yellow-400 pb-2 px-1"></i></div>
-					<div><i class="bi bi-music-note-list bg-gray-200 text-2xl text-gray-500 rounded-full p-1 px-2 hover:text-white hover:bg-yellow-400 pb-2 px-1"></i></div>
+				<div class="hidden md:flex gap-3 justify-center items-center">
+					<div><i class="bi bi-shuffle bg-gray-200 text-1xl text-gray-500 rounded-full p-1 px-2 hover:text-white hover:bg-yellow-400 pb-2 px-1"></i></div>
+					<div><i class="bi bi-arrows-fullscreen bg-gray-200 text-1xl text-gray-500 rounded-full p-1 px-2 hover:text-white hover:bg-yellow-400 pb-2 px-1"></i></div>
+					<div><i class="bi bi-music-note-list bg-gray-200 text-1xl text-gray-500 rounded-full p-1 px-2 hover:text-white hover:bg-yellow-400 pb-2 px-1"></i></div>
+					<div><i class="bi bi-arrow-repeat bg-gray-200 text-1xl text-gray-500 rounded-full p-1 px-2 hover:text-white hover:bg-yellow-400 pb-2 px-1"></i></div>
 				</div>
 			</div> <!--repeat, shuffle, resize, playlist icons-->
 		</div>
@@ -155,19 +157,78 @@
 	<section>
 		<div class="container mt-24 mx-auto">
 			<div class="flex gap-3 justify-center items-center">
-				<i class="bi bi-dash"></i>
-				<h1 class="text-4xl font-bold text-gray-700">HOLY QURAN</h1>
-				<i class="bi bi-dash"></i>
+				<div class="self-end pb-1">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-114 text-yellow-300 rounded-lg" fill="none" viewBox="0 0 40 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M40 12H4" />
+					</svg>
+				</div>
+				<div class="flex-row justify-center items-center">
+					<img class="inline h-16 w-56 px-8" src="https://s181.convertio.me/p/Vk7BSWzSGCN-QGhxdMlhag/011b3650bb0d0fef3804805ce28f5260/floral-hand-drawn-frame-border-decorative-design-element-free-vector.svg" alt="design">
+					<h1 class="text-2xl sm:4xl text-center font-bold text-gray-700">HOLY QURAN</h1>
+				</div>
+				<div class="self-end pb-1">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-114 text-yellow-300 rounded-lg" fill="none" viewBox="0 0 40 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M40 12H4" />
+					</svg>
+				</div>
 			</div>
 			<p class="text-center text-gray-500">Lorem ipsum dolor sit amet, consectetur adip</p>
 		</div>
 
 		<!--cards container-->
 		<div class="container mx-auto mt-10">
-			<div class="flex justify-center items-center border rounded-lg shadow">
-				<div class="flex-row justify-center items-center gap-2 text-center p-10">
-					<div><h3>AT TAUBAH</h3></div> <!--Title-->
-					<div><i class="bi bi-dash text-yellow-400"></i></div> <!--dash icon-->
+			<div class="grid sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-6 justify-center items-center gap-5">
+				<div class="flex-row justify-center items-center gap-2 text-center p-5 border rounded shadow ">
+					<div><h3 class="font-bold">AT TAUBAH</h3></div> <!--Title-->
+					<div>
+						<svg xmlns="http://www.w3.org/2000/svg" class="inline h-6 w-88 text-yellow-300 rounded-lg" fill="none" viewBox="0 0 40 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M25 12H4" /></svg>
+				  </div> <!--dash icon-->
+					<div><p>1.Lorem ipsum dolor sit amet, consectetur adip, Lorem ipsum dolor sit amet, consectetur adip</p></div> <!--paragraph-->
+					<div class="mt-7"><i class="bi bi-play-fill bg-gray-200 p-1 px-3 rounded-full text-gray-500 text-3xl pb-3 hover:text-white hover:bg-yellow-400"></i></div> <!--play icon-->
+				</div>
+				<div class="flex-row justify-center items-center gap-2 text-center p-5 border rounded shadow ">
+					<div><h3 class="font-bold">AT TAUBAH</h3></div> <!--Title-->
+					<div>
+						<svg xmlns="http://www.w3.org/2000/svg" class="inline h-6 w-88 text-yellow-300 rounded-lg" fill="none" viewBox="0 0 40 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M25 12H4" /></svg>
+				  </div> <!--dash icon-->
+					<div><p>1.Lorem ipsum dolor sit amet, consectetur adip, Lorem ipsum dolor sit amet, consectetur adip</p></div> <!--paragraph-->
+					<div class="mt-7"><i class="bi bi-play-fill bg-gray-200 p-1 px-3 rounded-full text-gray-500 text-3xl pb-3 hover:text-white hover:bg-yellow-400"></i></div> <!--play icon-->
+				</div>
+				<div class="flex-row justify-center items-center gap-2 text-center p-5 border rounded shadow ">
+					<div><h3 class="font-bold">AT TAUBAH</h3></div> <!--Title-->
+					<div>
+						<svg xmlns="http://www.w3.org/2000/svg" class="inline h-6 w-88 text-yellow-300 rounded-lg" fill="none" viewBox="0 0 40 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M25 12H4" /></svg>
+				  </div> <!--dash icon-->
+					<div><p>1.Lorem ipsum dolor sit amet, consectetur adip, Lorem ipsum dolor sit amet, consectetur adip</p></div> <!--paragraph-->
+					<div class="mt-7"><i class="bi bi-play-fill bg-gray-200 p-1 px-3 rounded-full text-gray-500 text-3xl pb-3 hover:text-white hover:bg-yellow-400"></i></div> <!--play icon-->
+				</div>
+				<div class="flex-row justify-center items-center gap-2 text-center p-5 border rounded shadow ">
+					<div><h3 class="font-bold">AT TAUBAH</h3></div> <!--Title-->
+					<div>
+						<svg xmlns="http://www.w3.org/2000/svg" class="inline h-6 w-88 text-yellow-300 rounded-lg" fill="none" viewBox="0 0 40 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M25 12H4" /></svg>
+				  </div> <!--dash icon-->
+					<div><p>1.Lorem ipsum dolor sit amet, consectetur adip, Lorem ipsum dolor sit amet, consectetur adip</p></div> <!--paragraph-->
+					<div class="mt-7"><i class="bi bi-play-fill bg-gray-200 p-1 px-3 rounded-full text-gray-500 text-3xl pb-3 hover:text-white hover:bg-yellow-400"></i></div> <!--play icon-->
+				</div>
+				<div class="flex-row justify-center items-center gap-2 text-center p-5 border rounded shadow ">
+					<div><h3 class="font-bold">AT TAUBAH</h3></div> <!--Title-->
+					<div>
+						<svg xmlns="http://www.w3.org/2000/svg" class="inline h-6 w-88 text-yellow-300 rounded-lg" fill="none" viewBox="0 0 40 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M25 12H4" /></svg>
+				  </div> <!--dash icon-->
+					<div><p>1.Lorem ipsum dolor sit amet, consectetur adip, Lorem ipsum dolor sit amet, consectetur adip</p></div> <!--paragraph-->
+					<div class="mt-7"><i class="bi bi-play-fill bg-gray-200 p-1 px-3 rounded-full text-gray-500 text-3xl pb-3 hover:text-white hover:bg-yellow-400"></i></div> <!--play icon-->
+				</div>
+				<div class="flex-row justify-center items-center gap-2 text-center p-5 border rounded shadow ">
+					<div><h3 class="font-bold">AT TAUBAH</h3></div> <!--Title-->
+					<div>
+						<svg xmlns="http://www.w3.org/2000/svg" class="inline h-6 w-88 text-yellow-300 rounded-lg" fill="none" viewBox="0 0 40 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M25 12H4" /></svg>
+				  </div> <!--dash icon-->
 					<div><p>1.Lorem ipsum dolor sit amet, consectetur adip, Lorem ipsum dolor sit amet, consectetur adip</p></div> <!--paragraph-->
 					<div class="mt-7"><i class="bi bi-play-fill bg-gray-200 p-1 px-3 rounded-full text-gray-500 text-3xl pb-3 hover:text-white hover:bg-yellow-400"></i></div> <!--play icon-->
 				</div>
@@ -177,9 +238,187 @@
 
 	<!--About us-->
 
-	<section class="container max-w-full bg-yellow-500 h-56 mt-16">
-		<div class="flex"></div>
+	<section class="container max-w-full mt-16 bg-gradient-to-r from-yellow-200 to-yellow-500 px-36 py-10 2xl:px-56">
+		<div class="container mx-auto ">
+			<div class="grid lg:grid-cols-2 gap-5 justify-center">
+				<div class= "flex mx-auto items-center">
+					<div class="h-62 w-72 bg-white">
+						<img class="object-cover w-full h-60 p-1 " src="https://i.pinimg.com/originals/d7/49/69/d7496966bd7bf6dfef9a9ab486f9a942.jpg" alt="masjid">
+				</div>
+				</div><!--Image grid-->
+				<!--About us grid-->
+				<div class="flex-row text-white text-center lg:text-left">
+					<h1 class="font-bold">ABOUT US</h1> <!--Heading-->
+					<p>Lorem ipsum dolor sit amet, consectetur adip, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, tempore nam repellat tempora quo ad. Provident unde porro atque! Impedit blanditiis voluptatem quisquam ab quaerat illum repudiandae cum, eum iusto!</p> <!--paragraph-->
+					<h3 class="mt-8 font-bold text-sm ">PROJECTS</h3> <!--small heading-->
+					<div class="flex mt-4 gap-5 justify-center lg:justify-start">
+						<div class="flex-row text-center">
+							<div class="border-2 border-white text-lg font-bold py-2 px-1 h-13 w-14">72</div> <!--number with padding-->
+							<div class="text-xs p-1 font-semibold "><span>MASJID</span></div> <!-- names -->
+						</div>
+						<div class="flex-row text-center">
+							<div class="border-2 border-white text-lg font-bold py-2 px-1 h-13 w-14">105</div> <!--number with padding-->
+							<div class="text-xs p-1 font-semibold "><span>NHOS</span></div> <!-- names -->
+						</div>
+						<div class="flex-row text-center">
+							<div class="border-2 border-white text-lg font-bold py-2 px-1 h-13 w-14">150</div> <!--number with padding-->
+							<div class="text-xs p-1 font-semibold "><span>MASJID</span></div> <!-- names -->
+						</div>
+						<div class="flex-row text-center">
+							<div class="border-2 border-white text-lg font-bold py-2 px-1 h-13 w-14">252</div> <!--number with padding-->
+							<div class="text-xs p-1 font-semibold "><span>NGOS</span></div> <!-- names -->
+						</div>
+						<div class="flex-row text-center ">
+							<div class="border-2 border-white text-lg font-bold py-2 px-1 h-13 w-14">25</div> <!--number with padding-->
+							<div class="text-xs p-1 font-semibold"><span>MASJID</span></div> <!-- names -->
+						</div>
+					</div> <!--end of project flex-->
+					<div></div> <!--read more button-->
+				</div>
+			</div> 
+		</div>
+		
 	</section>
 
+	<!--Our Services heading-->
+	<section>
+		<div class="container mt-16 mx-auto">
+			<div class="flex gap-3 justify-center items-center">
+				<div class="self-end pb-1">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-114 text-yellow-300 rounded-lg" fill="none" viewBox="0 0 40 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M40 12H4" />
+					</svg>
+				</div>
+				<div class="flex-row justify-center items-center">
+					<img class="inline h-16 w-56 px-8" src="https://s181.convertio.me/p/Vk7BSWzSGCN-QGhxdMlhag/011b3650bb0d0fef3804805ce28f5260/floral-hand-drawn-frame-border-decorative-design-element-free-vector.svg" alt="design">
+					<h1 class="text-2xl sm:4xl text-center font-bold text-gray-700">OUR SERVICES</h1>
+				</div>
+				<div class="self-end pb-1">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-114 text-yellow-300 rounded-lg" fill="none" viewBox="0 0 40 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M40 12H4" />
+					</svg>
+				</div>
+			</div>
+			<p class="text-center text-gray-500">Lorem ipsum dolor sit amet, consectetur adip</p>
+		</div>
+	</section>
+
+	<!--grids container-->
+	<section>
+		<div class="container mx-auto mt-10">
+			<div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3 gap-y-10">
+				<div class="flex-row border shadow rounded-2xl mx-auto justify-center">
+						<img class="object-contain h-48 w-105 rounded-t-2xl" src="https://i.pinimg.com/474x/1e/ce/fb/1ecefb353acbbed20510f8be7236e8e3--beautiful-children-beautiful-babies.jpg" alt="">
+					<div class="flex-row text-left pl-5 mt-5">
+						<h1 class="font-bold">QURAN CLASS</h1>
+						<P class="text-gray-500 mb-2">🕒 09:00 A.M - 03:00 P.M</P>
+					</div>
+				</div>
+				<div class="flex-row border shadow rounded-2xl mx-auto justify-center">
+					<img class="object-contain h-48 w-105 rounded-t-2xl" src="https://mk0lonerwolf9baniwvk.kinstacdn.com/wp-content/uploads/2018/05/types-of-spiritual-healing-min.jpg" alt="">
+				<div class="flex-row text-left pl-5 mt-5">
+					<h1 class="font-bold">COUNSELLING</h1>
+					<P class="text-gray-500 mb-2">🕒 09:00 A.M - 03:00 P.M</P>
+				</div>
+			</div>
+			<div class="flex-row border shadow rounded-2xl mx-auto justify-center">
+				<img class="object-contain h-48 w-105 rounded-t-2xl" src="https://images.pexels.com/photos/818649/pexels-photo-818649.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+			<div class="flex-row text-left pl-5 mt-5">
+				<h1 class="font-bold">NIKAH SERVICES</h1>
+				<P class="text-gray-500 mb-2">🕒 09:00 A.M - 03:00 P.M</P>
+			</div>
+		</div>
+		<div class="flex-row border shadow rounded-2xl mx-auto justify-center">
+			<img class="object-contain h-48 w-105 rounded-t-2xl" src="http://islam.ru/en/sites/default/files/img/story/2012/04/3229427529_db30fedd01_z.jpg" alt="">
+		<div class="flex-row text-left pl-5 mt-5">
+			<h1 class="font-bold">HADITH SCHOOL</h1>
+			<P class="text-gray-500 mb-2">🕒 09:00 A.M - 03:00 P.M</P>
+		</div>
+	</div>
+	<div class="flex-row border shadow rounded-2xl mx-auto justify-center">
+		<img class="object-contain h-48 w-105 rounded-t-2xl" src="https://media.istockphoto.com/photos/abandoned-muslim-tomb-stone-picture-id543082414?k=20&m=543082414&s=612x612&w=0&h=og90_APFzdIhAfainDQgeWu8oWS-Rj2aDfnsJdN1PlU=" alt="">
+	<div class="flex-row text-left pl-5 mt-5">
+		<h1 class="font-bold">FUNERAL SERVICES</h1>
+		<P class="text-gray-500 mb-2">🕒 09:00 A.M - 03:00 P.M</P>
+	</div>
+</div>
+<div class="flex-row border shadow rounded-2xl mx-auto justify-center">
+	<img class="object-fill h-48 w-105 rounded-t-2xl" src="https://www.brookings.edu/wp-content/uploads/2016/06/islamic_books001.jpg" alt="">
+<div class="flex-row text-left pl-5 mt-5">
+	<h1 class="font-bold">OUR ACADEMICS</h1>
+	<P class="text-gray-500 mb-2">🕒 09:00 A.M - 03:00 P.M</P>
+</div>
+</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!--Pillars of islam-->
+	<section class="container max-w-full mt-16">
+		<div class="h-full w-full bg-no-repeat bg-contain" style="background: url('https://images.pexels.com/photos/2233416/pexels-photo-2233416.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');">
+				<div class="flex gap-3 justify-center items-center pt-10">
+					<div class="self-end pb-1">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-114 text-white rounded-lg" fill="none" viewBox="0 0 40 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M40 12H4" />
+						</svg>
+					</div>
+					<div class="flex-row justify-center items-center">
+						<img class="inline h-16 w-56 px-8 bg-white" src="https://s181.convertio.me/p/Vk7BSWzSGCN-QGhxdMlhag/011b3650bb0d0fef3804805ce28f5260/floral-hand-drawn-frame-border-decorative-design-element-free-vector.svg" alt="design">
+						<h1 class="text-2xl sm:4xl text-center font-bold text-white">PILLARS OF ISLAM</h1>
+					</div>
+					<div class="self-end pb-1">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-114 text-white rounded-lg" fill="none" viewBox="0 0 40 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M40 12H4" />
+						</svg>
+					</div>
+				</div>
+
+				<!--small cards -->
+				<div class="grid md:grid-cols-3 xl:grid-cols-5 p-20 justify-center gap-5">
+					<div class="flex rounded-lg justify-center"> 
+						<div class="flex-row justify-center text-center bg-white border p-5 rounded-lg h-56 w-56">
+							<div class=""><img class="mb-2 h-10 w-10 mx-auto" src="../images/sahada-one-god.png" alt=""><!--icon -->
+							<div><h2 class="font-bold">SHAHADAH</h2></div> <!--heading-->
+							<p>Lorem ipsum dolor sit amet, consect,Lorem ipsum dolor sit amet, consectetur adip</p> <!--paragraph-->
+						</div>
+					</div>
+				</div>
+				<div class="flex rounded-lg"> 
+					<div class="flex-row justify-center text-center bg-white border p-5 rounded-lg h-56 w-56">
+						<div class=""><img class="mb-2 h-10 w-10 mx-auto" src="../images/ruku-posture.png" alt=""><!--icon -->
+						<div><h2 class="font-bold">SALAH</h2></div> <!--heading-->
+						<p>Lorem ipsum dolor sit amet, consect,Lorem ipsum dolor sit amet, consectetur adip</p> <!--paragraph-->
+					</div>
+				</div>
+			</div>
+			<div class="flex rounded-lg"> 
+				<div class="flex-row justify-center text-center bg-white border p-5 rounded-lg h-56 w-56">
+					<div class=""><img class="mb-2 h-10 w-10 mx-auto" src="../images/sadaqah.png" alt=""><!--icon -->
+					<div><h2 class="font-bold">ZAKAT</h2></div> <!--heading-->
+					<p>Lorem ipsum dolor sit amet, consect,Lorem ipsum dolor sit amet, consectetur adip</p> <!--paragraph-->
+				</div>
+			</div>
+		</div>
+		<div class="flex rounded-lg"> 
+			<div class="flex-row justify-center text-center bg-white border p-5 rounded-lg h-56 w-56">
+				<div class=""><img class="mb-2 h-10 w-10 mx-auto" src="../images/kaaba-mecca.png" alt=""><!--icon -->
+				<div><h2 class="font-bold">HAJJ</h2></div> <!--heading-->
+				<p>Lorem ipsum dolor sit amet, consect,Lorem ipsum dolor sit amet, consectetur adip</p> <!--paragraph-->
+			</div>
+		</div>
+	</div>
+	<div class="flex rounded-lg"> 
+		<div class="flex-row justify-center text-center bg-white border p-5 rounded-lg h-56 w-56">
+			<div class=""><img class="mb-2 h-10 w-10 mx-auto" src="../images/ramadan.png" alt=""><!--icon -->
+			<div><h2 class="font-bold">FASTING</h2></div> <!--heading-->
+			<p>Lorem ipsum dolor sit amet, consect,Lorem ipsum dolor sit amet, consectetur adip</p> <!--paragraph-->
+		</div>
+	</div>
+</div>
+		</div>
+	</section>
+
+
 </body>
-</html>
+</html> 
